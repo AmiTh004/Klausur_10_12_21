@@ -1,0 +1,15 @@
+Lieber Kunde, 
+In diesem Programm haben wir Versucht ihre Wünsche zu erfüllen und eine Buchungssoftware für ihre Escaperooms erstellt.
+
+Erst einmal zur Struktuer der Klasse, diese sind nach dem MVC Model aufgebaut, das bedeutet, dass alle ausgabe über die View stattfindet. Im Model stehen die Klassen der Objekte, also in Ihrem Fall finden sie hier die Buchungen und Escaperooms. Der Controller verbindet dann Backend (Model), und Foreend (View). Im Controller werden unter anderem auch die von ihnen gewünschten Demodaten erstellt. 
+
+Ich erkläre Ihnen hier einmal die Funktionsweise des Programms, anhand der Buchung b1r1:
+
+Zuerst muss der Escaperoom erstellt werden, der verbucht werden soll. Das passiert im MainController Zeile 12. Dort wird der Constructor der Klasse Escaperoom abgerufen, und über diesen werden dann die Variablen deklariert, also es werden Werte übergeben, die dann zu einem Objekt der Klasse Escaperoom hinzugefügt werden. 
+Nun kann die Eigentliche Buchung vorgenommen werden. Hier werden in den Paramentern des Constructors wieder Werte übergeben, mit denen dann das gleicht passiert wie schon beim Escaperoom. Der Escaperoom musste vorher implementiert werden, da eines der Paramenter der gebuchte Raum ist. Anschließend wird durch die Methode checkBuchung() überprüft, ob der jüngste Teilnehmer:in alt genug ist und ob die Gruppengröße die maximale Personenzahl nicht übersteigt. Wenn sie diese zusätzliche Prüfung der Gruppengröße nicht wünschen melden sie sich bitte noch einmal bei mir. 
+Dieser Vorgang wiederholt sich bei allen Instanzen. 
+In Zeile 47 ff. des MainControllers werden alle Buchungen überprüft und, sofern sie die Anforderungen erfüllen, über die View ausgegeben.
+
+Mit freundlichen Grüßen,
+
+Amelie Thran
