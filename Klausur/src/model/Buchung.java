@@ -23,10 +23,10 @@ public class Buchung {
 
     //Mehode in der das maximale Alter und die Gruppengröße überprüft wird
     public String checkBuchung() {
-        if (getJuengsterTeilnehmer() < getRaum()._mindestalter || getGruppengroesse() > getRaum()._max_personen) {
+        if (getJuengsterTeilnehmer() < getRaum().getMindestalter() || getGruppengroesse() > getRaum().getmaxPersonen()) {
             return "Buchung kann nicht vorgenommmen werden, wenn eine Person zu jung ist, oder die Gruppe zu groß ist.";
         } else {
-            return getRaum()._name + " wurde für "+ getZeitraum() + " gebucht. Gruppenleiter: "+ getVornameGruppenleiter()+" "+getNachnameGruppenleiter()+" Gruppengröße: "+getGruppengroesse()+ " Der jüngste Teilnehmer ist "+ getJuengsterTeilnehmer()+" Jahre alt";
+            return getRaum().getName() + " wurde für "+ getZeitraum() + " gebucht. Gruppenleiter: "+ getVornameGruppenleiter()+" "+getNachnameGruppenleiter()+" Gruppengröße: "+getGruppengroesse()+ " Der jüngste Teilnehmer ist "+ getJuengsterTeilnehmer()+" Jahre alt";
         }
     }
 

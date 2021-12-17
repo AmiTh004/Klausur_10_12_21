@@ -8,5 +8,6 @@ public class App {
 
         //Abrufen der Methode, die die Demodaten erstellt
         mc.demoData();
+        mc.buchungsAusgabe();
     }
 }

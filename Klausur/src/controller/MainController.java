@@ -44,13 +44,13 @@ public class MainController {
         Buchung b2r4 = new Buchung("12.10.2022, 15:20", 6, "Holger", "Trampe", r4, 30);
         buchungen.add(b2r4);
 
+    }
 
+    public void buchungsAusgabe() {
         //In dieser Foreach-Schleife wird jede Buchung geprüft und anschließend ausgegeben, oder es erscheint ein Fehlercode
         for (Buchung buchung : buchungen) {
             o.printData(buchung.checkBuchung());
         }
-
-        
     }
 
     
